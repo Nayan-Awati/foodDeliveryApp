@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Module_Three_Assignment</string>
+    <string name="new_app_name">Food Runner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_an_account_sign_up_now">Don\'t have an account? Sign up now</string>
+    <string name="login">Login</string>
+    <string name="open_drawer">open drawer</string>
+    <string name="close_drawer">close drawer</string>
+
+</resources>
