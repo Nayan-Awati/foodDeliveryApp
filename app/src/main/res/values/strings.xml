@@ -61,6 +61,12 @@
     <string name="order_placed">Your order has been successfully placed!</string>
     <string name="order_history_static_text">Your previous orders are listed below :</string>
     <string name="dummy_date">20/12/2018</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="address">Address</string>
+    <string name="choose_password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="registration">Registration</string>
     <array name="filters">
         <item>Cost(Low to High)</item>
         <item>Cost(High to Low)</item>
