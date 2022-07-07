@@ -128,19 +128,19 @@ class HomeRecyclerAdapter(val context: Context, val restaurantList: ArrayList<Re
             when(mode) {
                 1 -> {
 //                    check DB if the book is in favourite or not
-                    val restoEntity:RestaurantEntity? = db.restoDao().getRestoById(restoEntity.resId)
+                    val restoEntity:RestaurantEntity? = db.restaurantDao().getRestaurantById(restoEntity.resId.toString())
                     db.close()
                     return restoEntity !=null
                 }
                 2 -> {
 //                    save in favourites
-                    db.restoDao().insertResto(restoEntity)
+                    db.restaurantDao().insertRestaurant(restoEntity)
                     db.close()
                     return true
                 }
                 3 -> {
 //                    remove from fav
-                    db.restoDao().deleteResto(restoEntity)
+                    db.restaurantDao().deleteRestaurant(restoEntity)
                     db.close()
                     return true
                 }

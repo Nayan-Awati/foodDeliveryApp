@@ -6,5 +6,8 @@ import androidx.room.RoomDatabase
 @Database(entities = [RestaurantEntity::class], version = 1)
 abstract class RestaurantDatabase : RoomDatabase(){
 
-    abstract fun restoDao(): RestaurantDao
+    abstract fun restaurantDao(): RestaurantDao
+
+    abstract fun orderDao(): OrderDao
+
 }

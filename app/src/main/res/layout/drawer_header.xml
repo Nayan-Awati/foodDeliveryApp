@@ -1,49 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layout_height="270dip"
     android:background="@color/purple_500"
-    android:layout_height="300dp">
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:elevation="12dp"
-        app:cardCornerRadius="55dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="20dp"
-        android:padding="10dp">
-
-        <ImageView
-            android:layout_height="120dp"
-            android:layout_width="match_parent"
-            android:id="@+id/imageView1"
-            android:src="@drawable/ic_person_filled"
-            android:scaleType="centerCrop"/>
-
-    </androidx.cardview.widget.CardView>
-
+    <ImageView
+        android:id="@+id/imgDrawerImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="48dip"
+        android:src="@drawable/ic_profile_icon" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/txtDrawerText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="High Order Functionality"
-        android:textColor="@color/white"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:textSize="22dp"
-        />
+        android:layout_above="@+id/txtPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="12dip"
+        android:layout_marginLeft="15dip"
+        android:clickable="true"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:text="@string/app_name"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/txtDrawerSecondaryText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="High Order Functionality"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:textSize="16dp"
-        />
-
-
+        android:fontFamily="@font/poppins_medium"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:textAllCaps="false"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
 </LinearLayout>

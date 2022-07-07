@@ -78,7 +78,7 @@ class FavouriteRecyclerAdapter(val context: Context,  val restoList: ArrayList<R
             when(mode) {
                 3 -> {
 //                    remove from fav
-                    db.restoDao().deleteResto(restoEntity)
+                    db.restaurantDao().deleteRestaurant(restoEntity)
                     db.close()
                     return true
                 }

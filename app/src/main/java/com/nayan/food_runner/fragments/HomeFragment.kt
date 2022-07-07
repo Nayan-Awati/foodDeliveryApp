@@ -59,7 +59,7 @@ class HomeFragment : Fragment() {
                         for(i in 0 until resArray.length()){
                             val resJsonObject = resArray.getJSONObject(i)
                             val resObject = Restaurants(
-                                resJsonObject.getString("id"),
+                                resJsonObject.getInt("id"),
                                 resJsonObject.getString("name"),
                                 resJsonObject.getString("rating"),
                                 resJsonObject.getString("cost_for_one"),

@@ -67,6 +67,11 @@
     <string name="choose_password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="registration">Registration</string>
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="order_history">Order History</string>
+    <string name="faqs">FAQs</string>
+    <string name="logout">Logout</string>
     <array name="filters">
         <item>Cost(Low to High)</item>
         <item>Cost(High to Low)</item>
