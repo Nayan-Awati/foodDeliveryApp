@@ -23,6 +23,8 @@ import com.nayan.food_runner.fragments.FaqFragment
 import com.nayan.food_runner.fragments.FavouritesFragment
 import com.nayan.food_runner.fragments.HomeFragment
 import com.nayan.food_runner.fragments.ProfileFragment
+import com.nayan.food_runner.util.SessionManager
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,12 +34,13 @@ class MainActivity : AppCompatActivity() {
     lateinit var frame: FrameLayout
     lateinit var drawerLayout: DrawerLayout
     var previousMenuItem: MenuItem? = null
+
+    lateinit var sessionManager: SessionManager
     lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        sharedPreferences = getSharedPreferences(getString(R.string.preference_file), Context.MODE_PRIVATE)
 
         toolbar = findViewById(R.id.toolbar)
         coordinatorLayout = findViewById(R.id.coordinator)
